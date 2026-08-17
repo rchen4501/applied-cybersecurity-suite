@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Attacker Page</title>
+</head>
+<body>
+  <h1>Attacker Page</h1>
+
+  <p>This page contains example payloads for testing XSS.</p>
+
+  <ul>
+    <li>
+      Reflected XSS test:
+      <a href="http://127.0.0.1:8000/target.html?q=%3Cimg%20src%3Dx%20onerror%3Dalert('XSS')%3E">
+  Open reflected XSS payload
+</a>
+    </li>
+    <li>
+      HTML injection test:
+      <a href="http://127.0.0.1:8000/target.html?q=CHANGE_ME">
+        Open HTML injection payload
+      </a>
+    </li>
+  </ul>
+</body>
+</html>
